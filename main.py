@@ -1,3 +1,7 @@
+import usuario_a
+import usuario_b
+
+
 def mostrar_menu():
     print("\n===== CALCULADORA MATEMÁTICA =====")
     print("1. Serie Fibonacci")
@@ -13,6 +17,15 @@ def mostrar_menu():
 
 def main():
     mostrar_menu()
+    opcion = input("Seleccione una opción (1-8): ")
+
+    if opcion == "2":
+        numero = int(input("Ingrese un número: "))
+        if usuario_a.es_capicua(numero):
+            print("El número es capicúa.")
+        else:
+            print("El número NO es capicúa.")
+
 
 
 if __name__ == "__main__":
