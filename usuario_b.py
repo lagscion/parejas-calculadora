@@ -1,0 +1,13 @@
+# Funciones hechas por Santi .T
+
+def primos_en_rango(inicio, fin):
+    for num in range(inicio, fin + 1):
+        if num > 1:
+            es_primo = True
+            for i in range(2, num):
+                if num % i == 0:
+                    es_primo = False
+                    break
+            if es_primo:
+                return num
+#____________________________________________________
