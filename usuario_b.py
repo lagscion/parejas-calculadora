@@ -38,6 +38,8 @@ def verificar_primo():
 
 #_________________________________________________________
 
+# Operación factorial
+
 def factorial():
     n = int(input("Ingrese un número: "))
     resultado = 1
@@ -46,3 +48,5 @@ def factorial():
         resultado = resultado * i
 
     print("El factorial es:", resultado)
+
+#_________________________________________________________
