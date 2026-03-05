@@ -32,13 +32,11 @@ def main():
     elif opcion == "3":
         usuario_a.numero_perfecto()
 
-    
+    elif opcion == "4":
+        usuario_b.primos_en_rango()
 
     elif opcion == "5":
         usuario_b.verificar_primo()
-
-    elif opcion == "4":
-        usuario_b.primos_en_rango()
 
 
 if __name__ == "__main__":
