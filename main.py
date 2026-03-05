@@ -38,6 +38,11 @@ def main():
     elif opcion == "5":
         usuario_b.verificar_primo()
 
+    elif opcion == "6":
+        usuario_b.factorial()
+
+    elif opcion == "7":
+        usuario_b.mcd()
 
 if __name__ == "__main__":
     main()
