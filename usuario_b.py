@@ -37,3 +37,5 @@ def verificar_primo():
     print("Es primo")
 
 #_________________________________________________________
+
+def factorial():
