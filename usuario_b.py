@@ -50,3 +50,5 @@ def factorial():
     print("El factorial es:", resultado)
 
 #_________________________________________________________
+
+def mcd():
