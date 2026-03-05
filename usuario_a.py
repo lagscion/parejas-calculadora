@@ -33,3 +33,23 @@ def fibonacci():
         print("Debe ingresar un número entero válido.")
 
 def numero_perfecto():
+    try:
+        n = int(input("Ingrese un número entero positivo: "))
+        
+        if n <= 1:
+            print("El número debe ser mayor que 1.")
+            return
+        
+        suma = 0
+        
+        for i in range(1, n):
+            if n % i == 0:
+                suma += i
+        
+        if suma == n:
+            print(f"{n} es un número perfecto.")
+        else:
+            print(f"{n} no es un número perfecto.")
+            
+    except ValueError:
+        print("Debe ingresar un número entero válido.")
