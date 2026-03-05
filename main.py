@@ -29,6 +29,10 @@ def main():
         else:
             print("El número NO es capicúa.")
 
+    elif opcion == "4":
+        usuario_b.primos_en_rango()
+        
+
 
 
 if __name__ == "__main__":
