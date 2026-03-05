@@ -8,3 +8,6 @@ def es_capicua(numero):
     numero_str = str(numero)
 
     return numero_str == numero_str[::-1]
+
+def fibonacci():
+    
