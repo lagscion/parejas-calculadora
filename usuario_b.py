@@ -52,3 +52,12 @@ def factorial():
 #_________________________________________________________
 
 def mcd():
+    a = int(input("Ingrese el primer número: "))
+    b = int(input("Ingrese el segundo número: "))
+
+    while b != 0:
+        temp = b
+        b = a % b
+        a = temp
+
+    print("El MCD es:", a)
