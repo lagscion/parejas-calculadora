@@ -19,7 +19,10 @@ def main():
     mostrar_menu()
     opcion = input("Seleccione una opción (1-8): ")
 
-    if opcion == "2":
+    if opcion == "1":
+        usuario_a.fibonacci()
+
+    elif opcion == "2":
         numero = int(input("Ingrese un número: "))
         if usuario_a.es_capicua(numero):
             print("El número es capicúa.")
