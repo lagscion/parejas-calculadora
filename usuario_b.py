@@ -19,3 +19,21 @@ def primos_en_rango():
                 print(num, end = " - ")
                 
 #______________________________________________________
+
+# Verificar si un número es primo
+
+def verificar_primo():
+    n = int(input("Ingrese un número: "))
+
+    if n <= 1:
+        print("No es primo")
+        return
+
+    for i in range(2, n):
+        if n % i == 0:
+            print("No es primo")
+            return
+
+    print("Es primo")
+
+#_________________________________________________________
