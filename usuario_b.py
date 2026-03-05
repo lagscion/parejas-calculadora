@@ -1,6 +1,10 @@
 # Funciones hechas por Santi .T
+def primos_en_rango():
+    inicio = int(input("Ingrese el número inicial: "))
+    fin = int(input("Ingrese el número final: "))
 
-def primos_en_rango(inicio, fin):
+    print("Números primos en el rango:")
+
     for num in range(inicio, fin + 1):
         if num > 1:
             es_primo = True
@@ -8,6 +12,9 @@ def primos_en_rango(inicio, fin):
                 if num % i == 0:
                     es_primo = False
                     break
+
             if es_primo:
-                return num
-#____________________________________________________
+                print(num, end = " - ")
+
+primos_en_rango()
+#______________________________________________________
