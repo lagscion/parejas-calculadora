@@ -16,33 +16,37 @@ def mostrar_menu():
 
 
 def main():
-    mostrar_menu()
-    opcion = input("Seleccione una opción (1-8): ")
+    while True:
+        mostrar_menu()
+        opcion = input("Seleccione una opción (1-8): ")
 
-    if opcion == "1":
-        usuario_a.fibonacci()
+        if opcion == "1":
+            usuario_a.fibonacci()
 
-    elif opcion == "2":
-        numero = int(input("Ingrese un número: "))
-        if usuario_a.es_capicua(numero):
-            print("El número es capicúa.")
-        else:
-            print("El número NO es capicúa.")
+        elif opcion == "2":
+            numero = int(input("Ingrese un número: "))
+            if usuario_a.es_capicua(numero):
+                print("El número es capicúa.")
+            else:
+                print("El número NO es capicúa.")
 
-    elif opcion == "3":
-        usuario_a.numero_perfecto()
+        elif opcion == "3":
+            usuario_a.numero_perfecto()
 
-    elif opcion == "4":
-        usuario_b.primos_en_rango()
+        elif opcion == "4":
+            usuario_b.primos_en_rango()
 
-    elif opcion == "5":
-        usuario_b.verificar_primo()
+        elif opcion == "5":
+            usuario_b.verificar_primo()
 
-    elif opcion == "6":
-        usuario_b.factorial()
+        elif opcion == "6":
+            usuario_b.factorial()
 
-    elif opcion == "7":
-        usuario_b.mcd()
+        elif opcion == "7":
+            usuario_b.mcd()
+
+        if opcion == "8":
+            break
 
 if __name__ == "__main__":
     main()
