@@ -31,3 +31,5 @@ def fibonacci():
         
     except ValueError:
         print("Debe ingresar un número entero válido.")
+
+def numero_perfecto():
