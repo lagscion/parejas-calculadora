@@ -29,6 +29,11 @@ def main():
         else:
             print("El número NO es capicúa.")
 
+    elif opcion == "3":
+        usuario_a.numero_perfecto()
+
+    
+
     elif opcion == "5":
         usuario_b.verificar_primo()
 
